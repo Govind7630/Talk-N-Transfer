@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>  <!-- Yellow background -->
+    <color name="black">#000000</color>  <!-- Text & button colors -->
+    <color name="white">#FFFFFF</color>  <!-- Button text color -->
+</resources>
