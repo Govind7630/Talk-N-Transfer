@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/background"
     android:padding="30dp"
     tools:context=".SignUp2">
 
@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/create_account"
                 android:textAllCaps="true"
-                android:textColor="@color/black"
+                android:textColor="@color/Text"
                 android:layout_centerVertical="true"
                 android:textSize="40sp"
                 android:transitionName="transition_title_text" />
@@ -39,7 +39,7 @@
                 android:fontFamily="@font/ds_digital_bold"
                 android:text="2/3"
                 android:layout_alignParentRight="true"
-                android:textColor="@color/black"
+                android:textColor="@color/Text"
                 android:textAlignment="center"
                 android:textSize="30sp"
                 android:padding="10dp"
@@ -63,7 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Choose Gender"
-                android:textColor="@color/black"
+                android:textColor="@color/Text"
                 android:textSize="18sp" />
 
 
@@ -80,7 +80,9 @@
                     android:id="@+id/male"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Male" />
+                    android:textColor="@color/Text"
+                    android:text="Male"
+                    android:buttonTint="@color/Text"/>
 
 
                 <RadioButton
@@ -88,7 +90,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Female" />
+                    android:textColor="@color/Text"
+                    android:text="Female"
+                    android:buttonTint="@color/Text"/>
 
 
                 <RadioButton
@@ -96,7 +100,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Other" />
+                    android:textColor="@color/Text"
+                    android:text="Other"
+                    android:buttonTint="@color/Text"/>
+
             </RadioGroup>
 
 
@@ -105,14 +112,14 @@
                 android:layout_height="2dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:background="@color/black" />
+                android:background="@color/Text" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Select Your Age"
-                android:textColor="@color/black"
+                android:textColor="@color/Text"
                 android:textSize="18sp" />
 
 
@@ -122,10 +129,13 @@
                 android:layout_height="wrap_content"
                 android:calendarViewShown="false"
                 android:datePickerMode="spinner"
-                android:spinnersShown="true" />
+                android:textColor="@color/Text"
+                android:spinnersShown="true"
+                android:theme="@style/CustomDatePickerTheme"/>
 
 
         </LinearLayout>
+
 
 
         <Button
@@ -133,11 +143,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@color/black"
+            android:background="@color/Buttons"
             android:elevation="5dp"
             android:onClick="call3rdSigupScreen"
             android:text="@string/next_btn"
-            android:textColor="@color/white"
+            android:textColor="@color/button_text"
             android:transitionName="transition_next_btn" />
 
 
@@ -146,10 +156,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="#00000000"
+            android:background="@color/background"
             android:elevation="5dp"
             android:text="@string/login"
-            android:textColor="@color/black"
+            android:textColor="@color/Text"
             android:transitionName="transition_login_btn" />
 
 

@@ -2,12 +2,18 @@
 <resources>
     <!-- Base application theme -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorControlNormal">@color/placeholder</item>
+
+
     </style>
 
-    <style name="Base.Widget.MaterialComponents.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <item name="boxBackgroundMode">outline</item>
-        <item name="boxStrokeColor">@color/black</item>
-        <item name="boxStrokeWidth">2dp</item>
+
+    <style name="CustomDatePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/Text</item> <!-- Selected date indicator -->
+        <item name="android:textColorPrimary">@color/Text</item> <!-- Text color -->
+    </style>
+    <style name="CustomDatePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#FF5722</item>
     </style>
 
 </resources>

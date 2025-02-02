@@ -11,5 +11,9 @@
     <string name="enter_username">Username</string>
     <string name="next_btn">NEXT</string>
 
+    <string name="code">Co\nde</string>
+    <string name="verification">Verification</string>
+    <string name="description">Enter onetime password sent on\n+91 9328296349</string>
+
 
 </resources>

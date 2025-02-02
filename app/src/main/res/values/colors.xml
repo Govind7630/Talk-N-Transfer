@@ -2,5 +2,12 @@
 <resources>
     <color name="colorPrimary">#FFC107</color>  <!-- Yellow background -->
     <color name="black">#000000</color>  <!-- Text & button colors -->
-    <color name="white">#FFFFFF</color>  <!-- Button text color -->
+    <color name="white">#FFFFFF</color>
+
+    <color name="background"> #fbe4db</color>
+    <color name="Text_Fields">#fbe4db</color>
+    <color name="Buttons">#dfb6b2</color>
+    <color name="Text">#470000</color>
+    <color name="placeholder">#470000</color>
+    <color name="button_text">#470000</color>
 </resources>

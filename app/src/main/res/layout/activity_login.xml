@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/background"
     android:padding="30dp"
     android:gravity="center"
     android:transitionName="transition_login"
@@ -22,65 +22,78 @@
             android:layout_marginTop="10dp"
             android:text="@string/login"
             android:textAllCaps="true"
-            android:textColor="@color/black"
+            android:textColor="@color/Text"
             android:textSize="40sp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp">
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="0dp">
 
             <!-- Country Code Picker -->
             <com.hbb20.CountryCodePicker
                 android:id="@+id/login_country_code_picker"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/black_border"
-                android:padding="7dp"
+                android:background="@drawable/border"
+                android:padding="5dp"
+                app:ccp_flagBorderColor="@color/placeholder"
                 app:ccp_autoDetectCountry="true"
                 app:ccp_showFlag="true"
                 app:ccp_showFullName="true"
-                app:ccp_showNameCode="true" />
+                app:ccp_showNameCode="true"
+                app:ccp_contentColor="@color/placeholder" />
+
 
             <!-- Phone Number Input -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/login_phone_number"
-                style="@style/Base.Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/login_country_code_picker"
                 android:hint="@string/enter_phone_number"
-                android:textColorHint="@color/black"
-                app:boxStrokeColor="@color/black"
+                android:textColorHint="@color/placeholder"
+                app:boxStrokeColor="@color/placeholder"
+                app:boxStrokeWidth="2dp"
                 app:boxStrokeWidthFocused="2dp"
                 app:endIconMode="clear_text"
-                app:endIconTint="@color/black"
-                app:hintTextColor="@color/black"
+                app:endIconTint="@color/placeholder"
+                app:hintTextColor="@color/placeholder"
                 app:startIconDrawable="@drawable/field_phone_number_icon"
-                app:startIconTint="@color/black">
+                app:startIconTint="@color/placeholder"
+                android:background="@null"
+                app:boxStrokeErrorColor="@color/placeholder"
+                app:boxBackgroundMode="outline"
+                app:boxBackgroundColor="@android:color/transparent">
+
+
+
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/login_phone_number_editText"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="phone"
-                    android:textColor="@color/black"
+                    android:textColor="@color/placeholder"
                     android:textCursorDrawable="@null"
                     android:paddingStart="50dp"/>
 
-            </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Login Button -->
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Login Button -->
             <Button
                 android:id="@+id/login_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/login_phone_number"
                 android:layout_marginTop="20dp"
-                android:background="@color/black"
+                android:background="@color/Buttons"
                 android:onClick="callLoginScreen"
                 android:text="@string/login"
-                android:textColor="@color/white"
+                android:textColor="@color/button_text"
                 android:transitionName="transition_login_btn" />
 
             <!-- Sign Up Button -->
@@ -94,6 +107,7 @@
                 android:background="#00000000"
                 android:onClick="callSignUpScreen"
                 android:text="Create Account"
+                android:textColor="@color/Text"
                 android:transitionName="transition_login_btn"/>
 
             <!-- Progress Bar -->
